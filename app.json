@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "시간을 키우다",
+    "slug": "gamification-clock",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "gamification-clock",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a1a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gamificationclock.app",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "맞춤 광고를 제공하기 위해 사용됩니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a1a"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.gamificationclock.app",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3404990406454167~8181980291",
+          "iosAppId": "ca-app-pub-3404990406454167~1020851160"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9669a7ee-7138-4696-aa33-777dfd049654"
+      },
+      "router": {}
+    },
+    "owner": "bini59"
+  }
+}
