@@ -263,13 +263,13 @@ export const useSomeStore = create<SomeStore>((set) => ({
 
 - app.json의 AdMob App ID를 실제 값으로 교체 필요 (현재 placeholder)
 - adUnits.ts의 프로덕션 광고 단위 ID 교체 필요
-- `npx expo prebuild --clean` 후 네이티브 빌드 재실행 필요 (MMKV, AdMob, Notifee 반영)
+- `pnpm expo prebuild --clean` 후 네이티브 빌드 재실행 필요 (MMKV, AdMob, Notifee 반영)
 
 ### Next Steps
 
 <!-- 다음 세션에서 해야 할 작업 -->
 
-1. `npx expo prebuild --clean` 실행 후 iOS/Android 네이티브 빌드 확인
+1. `pnpm expo prebuild --clean` 실행 후 iOS/Android 네이티브 빌드 확인
 2. AdMob App ID 발급 및 app.json + adUnits.ts에 실제 ID 적용
 3. 알람 UI 화면 구현 (설정 탭에 알람 추가/삭제 기능)
 4. Lottie 애니메이션 에셋 추가 (뽑기 연출, 펫 애니메이션)
